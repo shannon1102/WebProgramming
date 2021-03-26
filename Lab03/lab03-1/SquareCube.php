@@ -5,13 +5,26 @@
     <body>
         <font size="5" color="red"> Generate Square and Cube Values </font>
         <br><!-- comment -->
-        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="GET">  
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="GET"> 
+            <?php
+            if (array_key_exists("start", $_GET)){
+                $start = $_GET["start"];
+                $end=$_GET["end"];}
+            else{
+                $start=0; $end=0;
+            }
+            ?>
             <table>
                 <tr>
                     <td>Select Start Number:</td>
                     <td><select name="start">
                             <?php for ($i=0;$i<=10;$i++){
-                                print("<option>$i</option>");
+                                if ($start==$i){
+                                    print("<option selected>$i</option>");
+                                }
+                                else{
+                                    print("<option>$i</option>");
+                                }
                             } ?>
                         </select></td>
                 </tr>
@@ -20,7 +33,12 @@
                     <td>
                         <select name="end">
                             <?php for($i=0;$i<=20;$i++){
-                               print("<option>$i</option>"); 
+                               if ($end==$i){
+                                    print("<option selected>$i</option>");
+                                }
+                                else{
+                                    print("<option>$i</option>");
+                                } 
                             }?>
                         </select>
                     </td>
