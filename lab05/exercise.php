@@ -28,11 +28,6 @@ Class BuildPage {
 </head>";
     $this->addHeader();
   }
-  
-  public function __destruct() {
-      $this->addFooter();
-      
-  }
 
   private function addHeader()
   {
@@ -51,7 +46,7 @@ Class BuildPage {
   }
 
 
-  public function getPage()
+  public function get()
   
   {   $this->addFooter();
       return $this->page;
@@ -59,14 +54,14 @@ Class BuildPage {
 }
 $page = new BuildPage("TITLE1",1999,"author1");
 $page->addContent("content1");
-echo $page->getPage();
+echo $page->get();
 
 
 
 $page1 = new BuildPage("TITLE2",2000,"author2");
 $page1->addContent("content2");
 $page1->addContent("content3");
-echo $page1->getPage();
+echo $page1->get();
 
 
 ?>
