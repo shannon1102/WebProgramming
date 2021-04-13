@@ -6,7 +6,7 @@ Class BuildPage {
   {
     $this->title = $title;
     $this->year = $year;
-    $this->copyright = "@".$copyright;
+    $this->copyright = "@".$year.' Copyright '." ".$copyright;
     $this->page ="<html>
     <head>
     <style type='text/css'>
@@ -26,41 +26,46 @@ Class BuildPage {
 }
     </style>
 </head>";
+    $this->addHeader();
+  }
+  
+  public function __destruct() {
+      $this->addFooter();
+      
   }
 
-  public function addHeader()
+  private function addHeader()
   {
-     $this->page .= "<body><header><h1>" . $this->title . "</h1></header>";
+     $this->page .= "<header><h1>" . $this->title . "</h1></header>";
   }
 
-  public function addFooter()
-  {
-    $this->page .= "<footer><div> ".$this->year . " " . $this->copyright . "</div></footer></html></body>"."<br><br><br>";
+  private function addFooter()
+  { 
+    $this->page .= "<footer><div> ". $this->copyright . "</div></footer></html>"."<br><br><br>";
+    
   }
   
   public function addContent($content)
-  {
-    $this->page .= "<main><div class='a'><p>" . $content . "</p></div></main>";
+  { 
+    $this->page .= "<div class='a'><p>" . $content . "</p></div>";
   }
 
 
   public function getPage()
-  {
-    return $this->page;
+  
+  {   $this->addFooter();
+      return $this->page;
   }
 }
 $page = new BuildPage("TITLE1",1999,"author1");
-$page->addHeader();
 $page->addContent("content1");
-$page->addFooter();
 echo $page->getPage();
 
 
 
 $page1 = new BuildPage("TITLE2",2000,"author2");
-$page1->addHeader();
 $page1->addContent("content2");
-$page1->addFooter();
+$page1->addContent("content3");
 echo $page1->getPage();
 
 
