@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.main-wrapper-cart * {
+    font-family: Arial, Helvetica, sans-serif;
+    padding    : 0;
+    margin     : 0;
+}
+
+
+.cart-panel-info a {
+    text-decoration: none;
+    color          : inherit;
+}
+
+.main-wrapper-cart a:hover {
+    text-decoration: underline;
+}
+
+.main-wrapper-cart th {
+    text-align: left;
+}
+
+.main-wrapper-cart td {
+    text-align: right;
+}
+
+.main-wrapper-cart th, .main-wrapper-cart td {
+    padding: 0.5rem 0;
+}
+
+.main-wrapper-cart input[type='number']::-webkit-inner-spin-button,
+.main-wrapper-cart input[type='number']::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+.main-wrapper-cart button {
+    outline: none;
+}
+
+.main-wrapper-cart main {
+    width        : 100%;
+    padding      : 1rem 0;
+    border-top   : 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.main-wrapper-cart {
+    display        : flex;
+    justify-content: center;
+    flex-direction : column;
+    margin         : auto;
+    width          : 70%;
+}
+
+.main-wrapper-cart .cart-header {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.main-wrapper-cart #cart-item-count {
+    font-weight: 100;
+}
+
+.main-wrapper-cart #keep-shopping-btn {
+    padding         : 1rem 1.125rem;
+    background-color: #fff;
+    outline         : none;
+    border          : none;
+    cursor          : pointer;
+    font-weight     : bold;
+    font-size       : 1.125rem;
+    transition      : all 0.2s ease-in-out;
+}
+
+.main-wrapper-cart #keep-shopping-btn:hover {
+    background-color: #e0e0e0;
+    border-radius   : 1.5rem;
+}
+
+.main-wrapper-cart #keep-shopping-btn:focus {
+    background-color: darkgray;
+    border-radius   : 1.5rem;
+}
+
+.main-wrapper-cart .cart-panel{
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-between;
+    margin         : 2rem 0;
+    padding        : 2rem 0;
+}
+
+.main-wrapper-cart .cart-panel:last-child .cart-panel-detail {
+    border-bottom: none;
+}
+
+.main-wrapper-cart .cart-panel-detail {
+    display       : flex;
+    flex-direction: row;
+    width         : 70%;
+    border-bottom : 1px solid #e0e0e0;
+}
+
+.main-wrapper-cart .cart-panel-image {
+    width: 200rem;
+}
+
+.main-wrapper-cart .cart-panel-image img {
+    width: 100%;
+}
+
+.main-wrapper-cart .cart-panel-info {
+    width  : 100rem;
+    padding: 0 1rem;
+}
+
+.main-wrapper-cart .cart-panel-info .item-info {
+    margin: 10px 0;
+}
+
+.main-wrapper-cart .cart-panel-quantity {
+    padding: 0 1rem;
+}
+
+.main-wrapper-cart .cart-panel-quantity input[type="number"] {
+    padding      : 10px 5px;
+    border       : 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow   : 0 1px 6px 0 rgb(34 34 34 / 15%);
+    outline      : none;
+}
+
+.main-wrapper-cart .cart-panel-price {
+    width      : 20%;
+    text-align : right;
+    font-weight: bold;
+}
+
+.main-wrapper-cart .cart-panel-payment {
+    width        : 40%;
+    margin       : 0 0 0 2rem;
+    padding      : 1rem;
+    border       : 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow   : 0 4px 20px rgb(34 34 34 / 15%);
+}
+
+.main-wrapper-cart .cart-panel-payment table {
+    width          : 100%;
+    border-collapse: collapse;
+}
+
+.main-wrapper-cart .cart-order-total {
+    border-top: 1px solid #e0e0e0;
+}
+
+.main-wrapper-cart #checkout-btn {
+    color           : #fff;
+    background-color: rgb(167, 48, 54);
+    width           : 100%;
+    border          : none;
+    border-radius   : 24px;
+    font-size       : 1.125rem;
+    padding         : 1rem;
+    cursor          : pointer;
+}
+
+.main-wrapper-cart .cart-panel-payment-all{
+    margin-top: 100px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper-cart .cart-panel-payment-all #checkout-btn-total {
+    margin-left: 50px;
+    color           : #fff;
+    background-color: rgb(0, 0, 0);
+    width           : 100%;
+    border          : none;
+    border-radius   : 24px;
+    font-size       : 1.125rem;
+    padding         : 1rem;
+    cursor          : pointer;
+}
+.main-wrapper-cart .cart-panel-payment-all p{
+    font-weight: bold;
+}
