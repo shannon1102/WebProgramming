@@ -1,0 +1,53 @@
+
+.main-wrapper-checkout h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.main-wrapper-checkout hr{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.main-wrapper-checkout .table-list{
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.main-wrapper-checkout table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.main-wrapper-checkout td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-overflow: ellipsis;
+    white-space     : nowrap;
+    overflow        : hidden;
+}
+
+.main-wrapper-checkout #total-price{
+    text-align: right;
+}
+
+.back-home{
+    text-align: right;
+    margin-right: 20%;
+    margin-top: 20px;
+}
+.back-home a:link, a:visited {
+    background-color: #c5c5c5;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius   : 24px;
+}
+.back-home a:hover, a:active {
+    background-color: rgb(167,48,54);
+    border-radius   : 24px;
+  }
