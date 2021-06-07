@@ -159,7 +159,11 @@ if (session_id() === '') {
                                 <input type="number" class="form-control" id="soluong" name="soluong">
                             </div>-->
                             <div class="action">
-                                <button class="add-to-cart btn btn-default" id="btnThemVaoGioHang">Add to cart</button>
+                                <!-- <button class="add-to-cart btn btn-default" id="btnThemVaoGioHang">Add to cart</button> -->
+                                <form action="addToCart.php" method="post">
+                                    <input type="hidden" name="itemID" value="<?= $itemID ?>">
+                                    <input type="submit" value="Add This to Cart"> <br><br>
+                                </form>
                                 <a class="like btn btn-default" href="#"><span class="fa fa-heart"></span></a>
                             </div>
                         </div>

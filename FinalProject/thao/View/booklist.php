@@ -133,7 +133,7 @@ $curpage = 0;
                     <div class="col-md-4">
                         <div style="display: flex; justify-content: space-between">
                             <p><button class ="btn btn-default" type"submit">Go to Cart</button>
-
+                            header('Location: cart.php');
                             <div>
                                 <?php
                                       $prev = $start - $maxpage; if ($prev<0) $prev = 0;
