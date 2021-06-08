@@ -9,7 +9,7 @@
 			$isAdmin = 1;
 		}else $isAdmin =0;
 
-		include('../../models/User.php');
+		include_once("Model/User.php");
 		$res = addNewUser($user, $pass, $email, $phone , $isAdmin);
 		if ($res==1){ ?>
 			<script type="text/javascript">

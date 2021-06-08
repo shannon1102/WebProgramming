@@ -11,16 +11,12 @@
 <html>
 <head>
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="../css/user.css">
+	<link rel="stylesheet" type="text/css" href="./login_user.css">
 </head>
 <body>
 	<div class="hero">
 		<div class="form-box">
-			<!-- <div class=button-box>
-				<div id="btn"></div>
-				<button type="button" class ="toggle-btn">Log In</button>
-				<button type="button" class ="toggle-btn">Register</button>
-			</div> -->
+		
 			<h1 id="h1title">Log In</h1><br>
 			<h2 id="h2title">To Book Page</h2>
 			<form class="input-group" id="login-form" action="../../controllers/user/LoginController.php" method="post">
