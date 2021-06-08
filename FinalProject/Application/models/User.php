@@ -1,16 +1,22 @@
-<?php
+<?php 
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+	function getUserByUserNameAndPassWord($user,$password){
+		$conn = new mysqli("localhost","root","","webprogramming") or die("Connection failed: " . $conn->connect_error);
+		$sql = "select *from users where UserName='".$user."' and Password='".$password."';";
+		$res= $conn->query($sql);
+		if ($res){
+			$row = $res->fetch_assoc();
+			// var_dump($row);
+			if ($row['Role']==1) return 1;
+			else return 0;
+		}
+		return -1;
+	}
 
-/**
- * Description of User
- *
- * @author Admin
- */
-class User {
-    //put your code here
-}
+	function addNewUser($userName, $pass, $email, $phone, $isAdmin){
+		$conn = new mysqli("localhost","root","","webprogramming") or die("Connection failed: " . $conn->connect_error);
+		$sql = "INSERT INTO users (UserName, Password, Email, PhoneNumber, Role)
+				VALUES ('".$userName."','".$pass."','".$email."','".$phone."',".$isAdmin.")";
+		if ($conn->query($sql)) return 1;
+		return -1;
+	}
