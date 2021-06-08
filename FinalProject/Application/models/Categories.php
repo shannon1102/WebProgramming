@@ -13,4 +13,13 @@
 		}
 		return -1;
 	}
+
+	function addCategory($category){
+		$conn = connectDatabase();
+		$sql = "INSERT INTO categories(Category) VALUES ('".$category."');";
+		if ($conn->query($sql)){
+			return 1;
+		}
+		return -1;
+	}
 ?>

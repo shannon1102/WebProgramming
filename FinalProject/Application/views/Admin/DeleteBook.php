@@ -9,6 +9,13 @@
 	<link rel="stylesheet" href="../views/css/style.css">
 </head>
 <body>
+	<div style="text-align: right">
+	    <nav>
+	    	<a href="../views/Admin/index.php">DARSHBOARD</a>||
+	        <a href="Profile.php">YOUR INFORMATION</a> ||
+	        <a href="Logout.php" >LOG OUT</a>
+	    </nav> 
+	</div>
 	<h2 class="titleh1">Select Delete Books:</h2>
 	<div class="container">
 	<form action ="./DeleteBookController.php" method="post">

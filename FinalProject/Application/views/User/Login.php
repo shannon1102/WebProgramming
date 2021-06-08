@@ -1,6 +1,12 @@
 <?php
 ?>
 
+<script type="text/javascript">
+	function goToRegisterPage(){
+		window.location.replace("./Register.php");
+	}
+</script>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +28,7 @@
 				<input type="text" class="input-field" placeholder="Password" required name="password">
 				<input type="checkbox" class="check-box"><span>Remember Password</span>
 				<input type="submit" class="submit-login" name="login" value="Login"><br>
-				<button type="button" class="submit-login">Register</button>
+				<button type="button" class="submit-login" onclick="goToRegisterPage()">Register</button>
 				<div id="adiv"><a href="" id="atag">Hehe</a></div>
 			</form>
 		</div>

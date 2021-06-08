@@ -18,9 +18,9 @@
     <div class="body">
         <div style="text-align: right">
             <nav>
-                <a href="Profile.php">THÔNG TIN CÁ NHÂN</a> ||
-                <a href="Logout.php" >ĐĂNG XUẤT </a>
-            </nav>
+                <a href="Profile.php">YOUR INFORMATION</a> ||
+                <a href="../../controllers/user/LogoutController.php" >LOG OUT</a>
+            </nav> 
         </div>
         <div class="noi-dung-1">
             <div class="form">
@@ -30,8 +30,10 @@
                     <br>
                     <button class="quan-ly" onclick="location.replace('../../controllers/AdminBookPageController.php?action=add')">ADD BOOK</button>
                     <br>
-                    <button class="quan-ly" onclick="location.replace('../../controllers/AdminBookPageController.php?action=delete')">DELETE BOOKS</button><br>
-                    <button class="quan-ly" onclick="window.open('QUANLYHANGHOA.php', '_self')">QUẢN LÝ HÀNG HÓA</button><br>
+                    <button class="quan-ly" onclick="location.replace('../../controllers/AdminBookPageController.php?action=delete')">DELETE BOOKS</button>
+                    <br>
+                    <button class="quan-ly" onclick="location.replace('../../controllers/AdminBookPageController.php?action=category')">ADD CATEGORY</button>
+                    <br>
                     <button class="quan-ly" onclick="window.open('QUANLY_HOADON.php', '_self')">QUẢN LÝ HÓA ĐƠN</button><br>
                     <button class="quan-ly" onclick="window.open('LAPHOADON.php', '_self')">LẬP HÓA ĐƠN</button>
                     <br>

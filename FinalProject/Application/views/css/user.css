@@ -96,3 +96,18 @@ span{
 	padding-top:20px; 
 	text-align: center;
 }
+
+.submit-register{
+	width: 85%;
+	padding: 10px 30px;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right , red, white);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+
+}
+.register-check-box{
+	margin:30px 10px 30px 0;	
+}

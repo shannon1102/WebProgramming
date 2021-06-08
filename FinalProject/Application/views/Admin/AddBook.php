@@ -1,6 +1,14 @@
 <?php
 	include("../models/Categories.php");
 	$res =getAllCategories();
+  session_start();
+  if (!isset($_SESSION['role'])){
+      ?>
+      <script type="text/javascript">
+          window.location.replace('../views/User/Login.php');
+      </script>
+      <?php
+  }
 
 ?>
 
@@ -18,7 +26,7 @@
     <nav>
     	<a href="../views/Admin/index.php">DARSHBOARD</a>||
         <a href="Profile.php">YOUR INFORMATION</a> ||
-        <a href="Logout.php" >LOG OUT</a>
+        <a href="./LogoutController.php" >LOG OUT</a>
     </nav> 
 </div>
 

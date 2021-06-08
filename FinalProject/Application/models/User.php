@@ -12,3 +12,11 @@
 		}
 		return -1;
 	}
+
+	function addNewUser($userName, $pass, $email, $phone, $isAdmin){
+		$conn = new mysqli("localhost","root","","webprogramming") or die("Connection failed: " . $conn->connect_error);
+		$sql = "INSERT INTO users (UserName, Password, Email, PhoneNumber, Role)
+				VALUES ('".$userName."','".$pass."','".$email."','".$phone."',".$isAdmin.")";
+		if ($conn->query($sql)) return 1;
+		return -1;
+	}
