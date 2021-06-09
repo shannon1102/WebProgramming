@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/editproject/do_search.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Login.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/views/Admin/AddBook.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/views/User/Login.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/View/viewBook.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Model/User.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/config.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/controllers/AdminBookPageController.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/db/db.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Controller/user/RegisterController.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/models/Book.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/invoicesHistory.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/addToCart.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/views/css/style.css</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/models/User.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/views/User/Logout.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/LoginController.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/controllers/AddBookController.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/cart.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/checkout.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Controller/user/LogoutController.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Controller/Controller.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/models/Categories.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/View/viewSearchlistBook.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/View/viewCategory.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/connect.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Model/EntityBook.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/index.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Model/Bookmodel.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Logout.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/stylehomepage.css</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/modules/admin/config.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/views/User/Register.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Register.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/views/User/Resetpass.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/views/User/ViewBySearch.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/views/Admin/adminpage.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/controllers/DeleteBookController.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/controllers/user/LoginController.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/views/User/ViewAll.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/View/booklist.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/Application/controllers/AddCategoryController.php</file>
+            <file>file:/C:/xampp/htdocs/editproject/View/header.php</file>
+        </group>
+    </open-files>
+</project-private>
