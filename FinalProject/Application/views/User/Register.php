@@ -19,10 +19,10 @@
 			<h2 id="h2title">Book Page</h2>
 			<form class="input-group" id="login-form" action="../../controllers/user/RegisterController.php" method="post">
 				<input type="text" class="input-field" placeholder="User Name" required name="user">
-				<input type="text" class="input-field" placeholder="Email" name="email">
-				<input type="text" class="input-field" placeholder="Password" required name="password">
-				<input type="text" class="input-field" placeholder="Phone number" name="phone">
-				<input type="checkbox" class="register-check-box" name="isAdmin"><span id="span-register">Is Admin</span>
+				<input type="text" class="input-field" placeholder="Email" name="email" required>
+				<input type="password" class="input-field" placeholder="Password" required name="password">
+				<input type="text" class="input-field" placeholder="Phone number" name="phone" required>
+				<div class="register-check-box"></div>
 				<input type="submit" class="submit-register" name="register" value="Register"><br>
 			</form>
 		</div>

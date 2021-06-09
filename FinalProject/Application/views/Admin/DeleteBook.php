@@ -1,19 +1,28 @@
 <?php
 	include('../modules/admin/config.php');
 	$conn = connectDatabase();
+
+	session_start();
+	  if (!isset($_SESSION['role'])){
+	      ?>
+	      <script type="text/javascript">
+	          window.location.replace('../views/User/Login.php');
+	      </script>
+	      <?php
+  	}
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Delete book</title>
+	<title>BookStore</title>
 	<link rel="stylesheet" href="../views/css/style.css">
 </head>
 <body>
 	<div style="text-align: right">
 	    <nav>
 	    	<a href="../views/Admin/index.php">DARSHBOARD</a>||
-	        <a href="Profile.php">YOUR INFORMATION</a> ||
-	        <a href="Logout.php" >LOG OUT</a>
+	        <a href="../views/Admin/ShowInformation.php">YOUR INFORMATION</a> ||
+	        <a href="./user/LogoutController.php" >LOG OUT</a>
 	    </nav> 
 	</div>
 	<h2 class="titleh1">Select Delete Books:</h2>

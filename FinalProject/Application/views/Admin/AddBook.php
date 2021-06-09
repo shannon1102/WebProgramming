@@ -1,3 +1,4 @@
+
 <?php
 	include("../models/Categories.php");
 	$res =getAllCategories();
@@ -15,7 +16,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Add book</title>
+	<title>BookStore</title>
 	<link rel="stylesheet" type="text/css" href="../views/css/style.css">
 	<style type="text/css">
 		body {font-family: Arial, Helvetica, sans-serif;}
@@ -25,8 +26,8 @@
 <div style="text-align: right">
     <nav>
     	<a href="../views/Admin/index.php">DARSHBOARD</a>||
-        <a href="Profile.php">YOUR INFORMATION</a> ||
-        <a href="./LogoutController.php" >LOG OUT</a>
+        <a href="../views/Admin/ShowInformation.php">YOUR INFORMATION</a> ||
+        <a href="./user/LogoutController.php" >LOG OUT</a>
     </nav> 
 </div>
 
@@ -39,7 +40,7 @@
       <label for="title">Title</label>
     </div>
     <div class="col-75">
-      <input type="text" id="title" name="title" placeholder="Input title of book">
+      <input type="text" id="title" name="title" placeholder="Input title of book" required>
     </div>
   </div>
 
@@ -48,7 +49,7 @@
       <label for="price">Price</label>
     </div>
     <div class="col-75">
-      <input type="text" id="price" name="price" placeholder="Input Price">
+      <input type="text" id="price" name="price" placeholder="Input Price" required>
     </div>
   </div>
 
@@ -57,7 +58,7 @@
       <label for="instock">Instock</label>
     </div>
     <div class="col-75">
-      <input type="text" id="instock" name="instock" placeholder="Instock">
+      <input type="text" id="instock" name="instock" placeholder="Instock" required>
     </div>
   </div>
 
@@ -66,7 +67,7 @@
       <label for="image">Image URL</label>
     </div>
     <div class="col-75">
-      <input type="text" id="image" name="image" placeholder="Input Image URL">
+      <input type="text" id="image" name="image" placeholder="Input Image URL" required>
     </div>
   </div>
 
@@ -75,7 +76,7 @@
       <label for="author">Author</label>
     </div>
     <div class="col-75">
-      <input type="text" id="author" name="author" placeholder="Input Author">
+      <input type="text" id="author" name="author" placeholder="Input Author" required>
     </div>
   </div>
 
@@ -85,11 +86,11 @@
     </div>
     <div class="col-75">
       <select id="category" name="category">
-        <?php
-        	foreach ($res as $key => $value) {
-        		echo "<option value= ".$value.">".$value."</option>";
-        	}
-        ?>
+        <option value="Comic">Comic</option>
+        <option value="Novel">Novel</option>
+        <option value="Drama">Drama</option>
+        <option value="Sci-Fic">Sci-Fic</option>
+        <option value="Other">Other</option>
       </select>
     </div>
   </div>

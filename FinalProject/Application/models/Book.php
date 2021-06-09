@@ -1,16 +1,8 @@
 <?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of Book
- *
- * @author Admin
- */
-class Book {
-    //put your code here
-}
+	function getBookById($id){
+		$conn = new mysqli("localhost", "root" ,"","webprogramming") or die("Connection failed: " . $conn->connect_error);
+		$sql = "select *from books where BookID=".$id.";";
+		$res = $conn->query($sql);
+		return $res->fetch_assoc();
+	}
+?>

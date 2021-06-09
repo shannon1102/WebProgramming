@@ -31,8 +31,7 @@
 		Instock int(100),
 		ImageURL varchar(500),
 		Category varchar(500),
-		Author varchar(500),
-		Constraint Books_FK1 Foreign Key (Category) References Categories(Category)
+		Author varchar(500)
 		);";
 	if ($conn->query($sql)){
 		print("create table book success!<br>");

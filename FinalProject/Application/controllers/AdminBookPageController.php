@@ -14,4 +14,10 @@
 	else if ($action == 'category'){
 		include('../views/Admin/AddCategory.php');
 	}
+	else if ($action == 'update'){
+		include('../views/Admin/EditBook.php');
+	}
+	else if ($action == 'viewOrder'){
+		include('../views/Admin/ViewOrder.php');
+	}
 ?>
